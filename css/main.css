@@ -19,3 +19,115 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+body {
+  margin: .75em;
+  font-weight: normal;
+}
+
+.cards {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-img {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-body h2 {
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.card-body p {
+  margin-top: 0;
+}
+
+.card {
+  display: block;
+}
+
+.card-img img {
+  width: 50px;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .cards {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .card-img {
+    width: 50px;
+    display: inline-block;
+    margin-right: .5em;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: 80%;
+  }
+
+  .card-body p {
+    margin-top: 0;
+  }
+
+  .card-body h2 {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  .cards {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .card {
+    display: inline-block;
+    width: 31%;
+  }
+
+  .card-img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .card-body {
+    display: block;
+    width: 95%;
+  }
+
+  .card-body h2 {
+    margin-top: .75em;
+  }
+
+  .card-body p {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+}
